@@ -1,0 +1,25 @@
+{
+  "name": "conn/site-transportadora",
+  "description": "Site modelo para negócios de transportes",
+  "type": "library",
+  "license": "MIT",
+  "prefer-stable" : true,
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Edinei J. Bauer",
+      "email": "edineibauer@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "conn/dashboard": "dev-master"
+  },
+  "autoload": {
+    "psr-0": {
+      "SiteTransportadora": "src/"
+    }
+  }
+}
+
+

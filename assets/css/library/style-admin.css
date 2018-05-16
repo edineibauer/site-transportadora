@@ -1,0 +1,297 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+input.ng-dirty.ng-valid.validate:not(.ng-empty) {
+    border-bottom: 1px solid #4CAF50;
+    box-shadow: 0 1px 0 0 #4CAF50;
+}
+
+input.ng-dirty.ng-invalid.validate:not(.ng-empty) {
+    border-bottom: 1px solid #F44336;
+    box-shadow: 0 1px 0 0 #F44336;
+}
+
+body {
+    background: #EEE;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    visibility: hidden!important;
+}
+
+.container {
+    width: 94% !important;
+    max-width: 100% !important;
+}
+
+.text-shadow {
+    text-shadow: 0px 3px 5px rgba(50, 50, 50, 1);
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.over-item {
+    position: relative;
+}
+
+.overmenu {
+    position: absolute;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    z-index: 9;
+}
+
+.overflow-320 {
+    max-height: 320px;
+}
+
+#endereco .modal-content {
+    overflow: auto;
+    min-height: 240px;
+}
+
+.navbar-fixed {
+    z-index: 999;
+}
+
+#sidenav-overlay {
+    /*z-index: 9999;*/
+}
+
+* {
+    outline: none;
+}
+
+.autocomplete-content {
+    width: calc(100% - 20px);
+    position: absolute;
+}
+
+/*   HEXAGONO */
+.hexagono {
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+    cursor: pointer;
+}
+
+.imagem1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.cliente {
+    background-image: url(../../images/hex-cliente.png);
+}
+
+.logistica {
+    background-image: url(../../images/hex-logistica.png);
+}
+
+.tabela {
+    background-image: url(../../images/hex-agenda.png);
+}
+
+.faturamento {
+    background-image: url(../../images/hex-gerenciamento.png);
+}
+
+.funcionario {
+    background-image: url(../../images/hex-cracha.png);
+}
+
+.usuario {
+    background-image: url(../../images/hex-usuario.png);
+}
+
+.report {
+    background-image: url(../../images/hex-report.png);
+}
+
+.imagem1 > div {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+    background-size: 120%;
+}
+
+/*.cliente, .logistica, .tabela, .faturamento, .funcionario{
+width: 100%;
+height: 100%;
+background-repeat: no-repeat;
+background-position: 50%;
+visibility: visible;
+-webkit-transform: rotate(-60deg);
+-moz-transform: rotate(-60deg);
+-ms-transform: rotate(-60deg);
+-o-transform: rotate(-60deg);
+transform: rotate(-60deg);
+}*/
+.um, .dois, .tres, .quatro, .cinco {
+    width: 140px;
+    height: 170px;
+    margin: 0 auto;
+}
+
+.um .cliente,
+.dois .logistica,
+.tres .tabela,
+.quatro .faturamento,
+.cinco .usuario {
+    /* background-size: cover; */
+    background-size: 120%;
+}
+
+/*FIM HEXAGONO*/
+.overlay-in:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5) url(../../images/load.gif) no-repeat center center;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+    position: fixed;
+}
+
+.img-appFenix {
+    margin: 12px 5px 0px;
+    padding: 7px;
+    background: #e2e2e2;
+    border: 1px solid #908f8f;
+}
+
+.contact i {
+    color: #fff;
+    background-color: #33383b;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.contact li {
+    margin-bottom: 8px;
+}
+
+.location-a {
+    width: calc(100% - 8px - 48px);
+    display: block;
+}
+
+.new-list {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.new-list:hover {
+    text-decoration: underline;
+}
+
+footer, .footer-copyright {
+    background: #292c2f !important;
+}
+
+nav ul a:hover {
+    background-color: #00838f !important;
+    color: #fff !important;
+}
+
+nav li a {
+    line-height: 40px;
+}
+
+nav li {
+    padding: 10px 0px !important;
+}
+
+a.logo {
+    display: inline-block;
+    margin: 0px;
+    padding: 13px 0px;
+    box-sizing: border-box;
+}
+
+.logo-img {
+    padding: 0px 8px;
+    width: 142px;
+    float: left;
+}
+
+.side-img {
+    width: 70%;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.formLoggin {
+    background: rgba(250, 250, 250, 0.85);
+    border-radius: 6px;
+}
+
+.login {
+    background: rgba(250, 250, 250, 0.85);
+    border-radius: 6px;
+    max-width: 500px;
+    margin: auto!important;
+    display: block!important;
+    float: initial!important;
+}
+
+.card-action a:hover {
+    color: #81d4fa !important;
+}
+
+td .transparent {
+    padding: 0 7px
+}
+
+@media screen and (min-width: 601px) {
+    .formLoggin {
+        margin-left: -10% !important;
+    }
+}
+
+/*
+.red-hover i{
+color:#e53935;
+}
+.red-hover i:focus{
+color:#FFF !important;
+}
+.red-hover input[type=text]:focus + label {
+color: #e53935 !important;
+}
+.red-hover input[type=text]:focus{
+border-bottom: 1px solid #e53935;
+box-shadow: 0 1px 0 0 #e53935;
+}
+*/

@@ -1,0 +1,126 @@
+{
+  "1": {
+    "format": "title",
+    "type": "varchar",
+    "nome": "Cidade",
+    "column": "cidade",
+    "size": "127",
+    "key": "title",
+    "unique": "true",
+    "default": "false",
+    "update": "true",
+    "relation": "",
+    "allow": {
+      "regex": "",
+      "validate": ""
+    },
+    "form": {
+      "input": "text",
+      "cols": "12",
+      "colm": "",
+      "coll": "",
+      "class": "",
+      "style": "font-size:1.7em;font-weight:bold"
+    }
+  },
+  "2": {
+    "format": "list",
+    "type": "int",
+    "nome": "Estado",
+    "column": "estado",
+    "size": "false",
+    "key": "list",
+    "unique": "false",
+    "default": "",
+    "update": "true",
+    "relation": "estado",
+    "allow": {
+      "regex": "",
+      "validate": ""
+    },
+    "form": {
+      "input": "list",
+      "cols": "12",
+      "colm": "",
+      "coll": "",
+      "class": "",
+      "style": ""
+    }
+  },
+  "3": {
+    "format": "text",
+    "type": "varchar",
+    "nome": "DDD",
+    "column": "ddd",
+    "size": "3",
+    "key": "",
+    "unique": "false",
+    "default": "",
+    "update": "true",
+    "relation": "",
+    "allow": {
+      "regex": "\/^0?\\d{2}$\/i",
+      "validate": ""
+    },
+    "form": {
+      "input": "text",
+      "cols": "12",
+      "colm": "",
+      "coll": "",
+      "class": "",
+      "style": ""
+    }
+  },
+  "4": {
+    "format": "text",
+    "type": "varchar",
+    "nome": "IBGE",
+    "column": "ibge",
+    "size": "32",
+    "key": "",
+    "unique": "false",
+    "default": "",
+    "update": "true",
+    "relation": "",
+    "allow": {
+      "regex": "",
+      "validate": ""
+    },
+    "form": {
+      "input": "text",
+      "cols": "12",
+      "colm": "",
+      "coll": "",
+      "class": "",
+      "style": ""
+    }
+  },
+  "0": {
+    "format": "none",
+    "type": "int",
+    "nome": "id",
+    "column": "id",
+    "size": "",
+    "key": "identifier",
+    "unique": "true",
+    "default": "false",
+    "update": "false",
+    "relation": "",
+    "allow": {
+      "regex": "",
+      "values": "",
+      "names": "",
+      "validate": ""
+    },
+    "form": {
+      "input": "hidden",
+      "cols": "12",
+      "colm": "",
+      "coll": "",
+      "class": "",
+      "style": ""
+    },
+    "select": [],
+    "filter": []
+  }
+}

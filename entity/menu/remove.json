@@ -1,0 +1,3 @@
+{
+  "*": ["pais", "estado", "cidade", "email", "telefone", "nota_fiscal", "transporte_custos", "transporte_status", "material"]
+}

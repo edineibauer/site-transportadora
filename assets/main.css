@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* layout */
+#wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+#header, #main, #footer {
+    display: table-row;
+}
+#header, #footer {
+    height: 1px;
+}
+.main {
+    padding-bottom: 1em;
+    opacity: 0;
+}
+body{
+    /*font-family: 'Open Sans', arial, sans-serif !important;*/
+    /*font-weight: 100;*/
+    background-color: #eeeeee;
+}
+#btnHome, #btnExit{
+    padding-right: 8px;
+    margin-top: 18px;
+    width: 50px;
+    height: 42px;
+    -webkit-filter: brightness(200%);
+}
+.bg-header{
+    margin: 0;
+    background:#333 url(../images/bg-header.jpg) fixed no-repeat center top;
+    height: 5em;
+}
+.bg-header img{
+    padding: 0;
+    height: 5.2em;
+}
+.footer{
+    font-size: .8em;
+    color: #f0f0f0;
+    background: #222;
+    padding: .5em;
+}
+.footer li{
+    list-style: none;
+}
+.footer h4{
+    font-size: 1.1em;
+    margin: 0;
+    padding: .2em;
+}
+.footer b{
+    font-size: 1.2em;
+}
+.location{
+    background: #111;
+}
+.box-field{
+    margin-bottom: .5em;
+    font-size: 1em;
+    background-color: rgba(93, 93, 93, 0.23);
+    padding: 1em;
+    margin: none;
+    color: #f0f0f0;
+}
+@media screen and (max-width: 480px){
+    .box-field {
+        padding: .5em;
+    }
+}
+.box-field:hover{
+    background-color: rgba(93, 93, 93, 0.5);
+}
+.margin1{
+    margin-top: 1.5em;
+}
+.margin2{
+    margin-top: 2.5em;
+}
+.white{
+    color: white;
+}
+.bleft{
+    margin-left: 1em;
+}
+/*MENU SMALL*/
+.nav-small{
+    padding: .65em;
+    background-color: white;
+    height: 3.75em;
+}
+.top-bar-title{
+    padding-top: .5em;
+}
+.nav-small span,
+.nav-small strong{
+    margin-left: 1em;
+    color: #777;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    overflow-x: scroll;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav h6{
+    font-size: .9em;
+    color: #818181;
+}
+.sidenav a{
+    padding: 1em .5em .5em 2em;
+    text-decoration: none;
+    font-size: 1em;
+    color: #222;
+    display: block;
+    transition: 0.3s
+}
+.sidenav a:hover, .offcanvas a:focus, .sidenav h6:hover{
+    color: #AAA;
+}
+.sidenav img{
+    padding-top: 1em;
+    width: 80%;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    border-radius: 1em;
+    padding: 0;
+    right: 0;
+    width: 1em;
+    font-size: 2.2em;
+    margin: .15em;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}*/
+/*FIM MENU SMALL*/
+.transition, .button{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+img.hover:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.orbit-image:hover{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/*HEXAGONO*/
+.hexagono {
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+    cursor: pointer;
+}
+.border{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+.image{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+.hex {
+    width: 120px;
+    height: 170px;
+}
+.hex .image {
+    /* background-size: cover; */
+    background-size: 120%;
+}
+.client{
+    background-image: url(../images/hex-client.png);
+}
+.logistics{
+    background-image: url(../images/hex-logistica.png);
+}
+.table{
+    background-image: url(../images/hex-agenda.png);
+}
+.billing{
+    background-image: url(../images/hex-gerenciamento.png);
+}
+.user{
+    background-image: url(../images/hex-cracha.png);
+}
+/*FIM HEXAGONO*/
+::-webkit-scrollbar {
+    width: .9em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    /*
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /*
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    */
+    /*background: rgba(15, 168, 66,0.4);*/
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    /*background: rgba(15, 168, 66,0.4);*/
+}
+ul, li{
+    list-style: none;
+}
+
+.ui-datepicker{
+    font-size: 12px;
+}
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.ui-autocomplete.ui-widget {
+    font: normal 14px 'Open Sans';
+}
+.noselect, img {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;           /* non-prefixed version, currently
+    not supported by any browser */
+}
+body.wait *, body.wait{
+    cursor: progress !important;
+}
+.message-info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.message-success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.message-warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.message-error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+.message-error::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #D8000C;
+}
+.message-error:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #D8000C;
+    opacity:  1;
+}
+.message-error::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #D8000C;
+    opacity:  1;
+}
+.message-error:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #D8000C;
+}
+
+.info {
+    color: #00529B;
+}
+.success {
+    color: #4F8A10;
+}
+.warning {
+    color: #9F6000;
+}
+.error {
+    color: #D8000C;
+}
+.msg{
+    position: fixed;
+    z-index: 1;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+    top: 0;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    -webkit-box-shadow: 0 0 8px 0.2px #333;
+    box-shadow: 0 0 8px 0.2px #333;
+    cursor: pointer;
+    /*bottom: 0;*/
+}
+.msg:hover{
+    opacity: 0.8;
+}
+.msg p{
+    float: right;
+    width: 300px;
+    /*margin-left: 10px;*/
+    font: normal 16px 'Open Sans', Verdana;
+}
+.msg img{
+    float: left;
+    width: 48px;
+    vertical-align: middle;
+}
+/*.msg .close{
+    float: right;
+    padding: 10px;
+    font: bold 20px 'Open Sans';
+}*/
+#showErros{
+    -webkit-box-shadow: 0 0 8px 0.2px #333;
+    box-shadow: 0 0 8px 0.2px #333;
+    text-align: center;
+    position: fixed;
+    width: 120px;
+    /*left: 50%;
+    margin-left: -60px;*/
+    padding: 12px 16px;
+    font: normal 12px 'Open Sans', Verdana;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1;
+    bottom: 0;
+    margin: 50px;
+    margin-left: 10px;
+}
+#showErros:hover{
+    opacity: 0.8;
+}
+
+.h{
+    display: none;
+}
